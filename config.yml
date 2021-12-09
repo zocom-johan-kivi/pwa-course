@@ -17,8 +17,8 @@ before:
     method: issues.update
     owner: "%payload.repository.owner.login%"
     repo: "%payload.repository.name%"
-    issue_number: "1"
-    milestone: "1"
+    issue_number: 1
+    milestone: 1
 steps:
   - title: Lektion 1 - Hello World
     description: Introduktion till kursen
