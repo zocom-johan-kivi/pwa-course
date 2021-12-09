@@ -2,7 +2,7 @@ title: pwa
 description: A course about Progressive Web Apps.
 template:
   repo: pwa-template
-  name: pwa-thing
+  name: my-awesome-pwa-course
 before:
   - type: octokit
     method: issues.createMilestone
