@@ -18,7 +18,7 @@ before:
     owner: "%payload.repository.owner.login%"
     repo: "%payload.repository.name%"
     issue_number: 1
-    milestone: 1
+    assignees: ["%payload.repository.owner.login%"]
 steps:
   - title: Lektion 1 - Hello World
     description: Introduktion till kursen
