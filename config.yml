@@ -14,7 +14,7 @@ before:
     title: Modul 0 - Hello World
     body: module-0/module-0-lesson-1.md
   - type: octokit
-    method: issues.updateIssue
+    method: issues.addAssignees
     owner: "%payload.repository.owner.login%"
     repo: "%payload.repository.name%"
     issue_number: 1
