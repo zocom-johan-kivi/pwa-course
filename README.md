@@ -1,2 +1,2 @@
 # pwa-course
-A PWA course.
+A course about Progressive Web Apps.

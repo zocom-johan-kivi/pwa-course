@@ -1,16 +1,24 @@
 title: pwa
-description: A PWA course.
+description: A course about Progressive Web Apps.
 template:
   repo: pwa-template
-  name: pwa
+  name: pwa-thing
 before:
+  - type: octokit
+    method: issues.createMilestone
+    owner: "%payload.repository.owner.login%"
+    repo: "%payload.repository.name%"
+    title: Modul 0
+    description: Introduktion till kursen
   - type: createIssue
-    title: Welcome!
-    body: new-issue.md
+    title: Modul 0 - Hello World
+    body: module-0/module-0-lesson-1.md
 steps:
-  - title: First step
-    description: The first step in your course
-    event: issues.assigned
-    link: '{{ repoUrl }}'
+  - title: Lektion 1 - Hello World
+    description: Introduktion till kursen
+    event: issues.closed
+    link: '{{ repoUrl }}/issues/1'
     actions:
-      - type: closeIssue
+      - type: respond
+        with: module-0/module-0-lesson-1-done.md
+        issue: 1
