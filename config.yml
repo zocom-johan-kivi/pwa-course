@@ -18,7 +18,6 @@ before:
     owner: "%payload.repository.owner.login%"
     repo: "%payload.repository.name%"
     issue_number: 1
-    labels: ['kivi']
 steps:
   - title: Lektion 1 - Hello World
     description: Introduktion till kursen
